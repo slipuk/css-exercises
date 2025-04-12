@@ -27,3 +27,42 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/* solution */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.center {
+  flex: auto;
+  display: flex;
+}
+
+.sidebar {
+  padding: 16px;
+  flex: 0 0 300px;
+}
+
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.content {
+  padding: 48px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  gap: 16px;
+}
+
+.content div {
+  width: 32%;
+  flex: 0 0 auto;
+}
+
